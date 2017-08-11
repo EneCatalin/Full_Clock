@@ -1,6 +1,5 @@
 $( document ).ready(function() {
     //modify page content
-    d = new Date();
     var timer = 0;
     var test =null;
 
@@ -31,6 +30,9 @@ $( document ).ready(function() {
     }
 
     function reset(){
+        $(".pause").val("Start");
+        $(".pause").removeClass("pause").addClass("start");
+
         timer =0;
         $(".timer").html(timer.toString().toHHMMSS());
         if(test !==null) {
